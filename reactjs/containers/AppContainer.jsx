@@ -1,19 +1,21 @@
 import React from "react"
+import PostList from "../components/PostList";
+import CategoryList from "../components/CategoryList";
 
-import Headline from "../components/Headline"
 
 export default class AppContainer extends React.Component {
     render() {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-12">
-                        <Headline>Hello Ozcan Yarimdunya</Headline>
+                    <div className="col-sm-6">
+                        <h3>Post List</h3>
+                        <PostList/>
                     </div>
-                    <ul>
-                        <li>Hello</li>
-                        <li>World</li>
-                    </ul>
+                    <div className="col-sm-6">
+                        <h3>Category List</h3>
+                        <CategoryList/>
+                    </div>
                 </div>
             </div>
         )
