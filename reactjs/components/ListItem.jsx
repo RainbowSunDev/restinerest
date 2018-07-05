@@ -1,6 +1,6 @@
 import React from "react"
 
-class CategoryItem extends React.Component {
+class ListItem extends React.Component {
     onItemClicked = () => {
         console.log("Clicked item text: " + this.props.text);
     };
@@ -12,4 +12,4 @@ class CategoryItem extends React.Component {
     }
 }
 
-export default CategoryItem;
+export default ListItem;

@@ -1,6 +1,6 @@
 import React from "react"
 import API from "../utils/Const";
-import CategoryItem from "./CategoryItem";
+import ListItem from "./ListItem";
 
 class CategoryList extends React.Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class CategoryList extends React.Component {
         return (
             <ul>
                 {
-                    this.state.categories.map((category, index) => <CategoryItem key={index} text={category.name}/>)
+                    this.state.categories.map((category, index) => <ListItem key={index} text={category.name}/>)
                 }
             </ul>
         )

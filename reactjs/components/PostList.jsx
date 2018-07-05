@@ -1,6 +1,6 @@
 import React from "react"
 import API from "../utils/Const";
-import PostItem from "./PostItem";
+import ListItem from "./ListItem";
 
 class PostList extends React.Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class PostList extends React.Component {
         return (
             <ul>
                 {
-                    this.state.posts.map((post, index) => <PostItem key={index} text={post.title}/>)
+                    this.state.posts.map((post, index) => <ListItem key={index} text={post.title}/>)
                 }
             </ul>
         )
